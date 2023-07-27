@@ -34,6 +34,19 @@ SunBnb is a intern project
 5. generate a key that updates .env `php artisan key:generate`
 6. run development `php artisan serve`
 
+# CORS setup
+
+1. install sanctum `composer require laravel/sanctum`
+2. publish the sanctum configs `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"`
+3. migrate databases `php artisan migrate`
+4. go to kernel.php and configure api to:
+    ```
+    'api' => [
+        \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+        'throttle:api',
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+    ```
 
 ## Database Setup
 
