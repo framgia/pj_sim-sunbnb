@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('home', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('city_id')->constrained('cities')->cascadeOnDelete();
             $table->string('home_type');
             $table->integer('max_bedroom');
             $table->integer('max_bathroom');
             $table->integer('max_person');
             $table->text('img_path')->nullable();
-            $table->foreignId('city_id')->constrained('cities')->cascadeOnDelete();
             $table->timestamps();
         });
     }

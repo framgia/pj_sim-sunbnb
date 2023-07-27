@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('user_name');
             $table->string('password');
-            $table->string('emails');
-            $table->integer('contact_num');
+            $table->string('email');
+            $table->string('contact_num');
             $table->text('photo_img_path')->nullable();
             $table->text('id_img_path')->nullable();
             $table->text('dti_img_path')->nullable();
