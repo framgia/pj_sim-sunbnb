@@ -1,0 +1,8 @@
+workspace: true
+
+jobs:
+  - name: build-js
+    image: node:12-alpine
+    script:
+      - npm install
+      - npm run lint

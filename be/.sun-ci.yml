@@ -1,0 +1,18 @@
+workspace: true
+
+jobs:
+  - name: build-php
+    stage: build-php
+    image: sunasteriskrnd/php-workspace:7.4
+    cache:
+      - key: composer_vendor_$CI_BRANCH
+        paths:
+          - vendor
+    before_script:
+      - cp .env.example .env.testing
+      - composer install
+      - php artisan key:generate
+    script:
+      - composer sniff
+    after_script:
+      - echo "Finish job"
