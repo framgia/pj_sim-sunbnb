@@ -2,8 +2,8 @@
   <v-app>
     <div>
       <div class="home-desc">
-        <span class="sunbnb">SunBnB</span> Book unique homes <br />and
-        experience a city like a local.
+        <span class="sunbnb">SunBnB</span> Book unique homes <br />and experience a city like a
+        local.
       </div>
       <div class="home-wrapper">
         <div class="input-wrapper">
@@ -69,13 +69,5 @@ export default {
 
 .home-search:hover {
   background-color: #d40000 !important ;
-}
-
-.divider {
-  height: 1px;
-  width: 100%;
-  background-color: #b6b6b6;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 </style>

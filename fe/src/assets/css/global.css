@@ -1,10 +1,16 @@
 @font-face {
   font-family: "Varela Round";
-  src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap")
-    format("truetype");
+  src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap") format("truetype");
 }
 
 body {
   font-family: "Varela Round", sans-serif;
   margin: 60px;
+}
+
+.divider {
+  width: 100%;
+  background-color: #ccc;
+  margin: 10px 0;
+  height: 1px;
 }
