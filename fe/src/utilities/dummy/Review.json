@@ -1,0 +1,4 @@
+[
+    {"id": 1, "rating": 4, "name": "Hiro", "date": "15-JUL-2019", "review": "Very cool host", "img": "https://cdn.britannica.com/71/234471-050-093F4211/shiba-inu-dog-in-the-snow.jpg"},                
+    {"id": 2, "rating": 5, "name": "Maki", "date": "20-AUG-2019", "review": "I enjoyed my stay!", "img": "https://pbs.twimg.com/media/C8QqGm4UQAAUiET.jpg"}
+]
