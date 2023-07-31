@@ -1,0 +1,6 @@
+[
+    {"id": 1, "date": "1-AUG-23", "name": "Rosvenil Hotel", "client": "Hiro Yamada", "avatar":"https://cdn.britannica.com/71/234471-050-093F4211/shiba-inu-dog-in-the-snow.jpg", "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268983936.jpg?k=3b7f615eb2b3fa45bff46a85531489fe801b01e1d5d0f73d1e2a480ee7a8f064&o=&hp=1"},                
+    {"id": 2, "date": "9-AUG-23", "name": "Sampaguita Suites", "client": "Maki Suzuki", "avatar":"https://pbs.twimg.com/media/C8QqGm4UQAAUiET.jpg", "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/71/9d/0a/hotel-lobby-and-reception.jpg?w=600&h=-1&s=1"},                
+    {"id": 3, "date": "17-AUG-23", "name": "Tacloban Plaza Hotel", "client": "Sazae Fuguta", "avatar":"https://cdn.wikiwiki.jp/to/w/chaos-battle/%E3%83%95%E3%82%B0%E7%94%B0%E3%82%B5%E3%82%B6%E3%82%A8/::ref/OIP%20%281%29.jpg?rev=359c0161deffa3f829d4619084c44444&t=20230306092043", "img": "https://pix10.agoda.net/hotelImages/117/1178929/1178929_16031511530040764796.jpg?ca=6&ce=1&s=414x232"},                
+    {"id": 4, "date": "8-AUG-23", "name": "Crown Regency Hotel & Towers", "client": "Naomi Chiaki", "avatar":"https://columbia.jp/artist-info/photo/chiaki03.jpg", "img": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/52/15/521521_v6.jpeg"}                
+]
