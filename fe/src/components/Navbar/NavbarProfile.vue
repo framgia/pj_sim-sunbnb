@@ -57,6 +57,7 @@ export default {
     },
     editProfile() {
       // Implement action to edit profile
+      this.$router.push('/EditProfile')
     },
     myReservations() {
       // Implement action for "My Reservations"
