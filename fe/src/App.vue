@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import NavBar from "./components/Navbar";
-export default {
-  name: "App",
-  components: {
-    NavBar,
-  },
-};
+  import NavBar from "./components/Navbar";
+  export default {
+    name: "App",
+    components: {
+      NavBar,
+    }
+  }
 </script>
