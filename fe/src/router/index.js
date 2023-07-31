@@ -3,6 +3,8 @@ import AllComponents from "../pages/AllComponents.vue";
 import Registration from "../pages/RegistrationView.vue"
 import Login from "../pages/LogIn.vue";
 import EditProfile from "../pages/EditProfile.vue";
+import AddNewListing from "../pages/AddNewListingView.vue"
+
 
 const routes = [
   {
@@ -20,6 +22,10 @@ const routes = [
   {
     path: "/EditProfile",
     component: EditProfile,
+  },
+  {
+    path: "/AddListing",
+    component: AddNewListing,
   },
 
   // Add more routes as needed
