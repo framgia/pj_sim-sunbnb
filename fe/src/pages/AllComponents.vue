@@ -5,6 +5,7 @@
     <ReviewForm />
     <ReviewRoom />
     <ReviewHost />
+    <ListingCard/>
   </div>
 </template>
 
@@ -14,6 +15,8 @@ import HomepageBanner from "../components/HomepageBanner.vue";
 import ReviewForm from "../components/Review/ReviewForm.vue";
 import ReviewRoom from "../components/Review/ReviewRoom.vue";
 import ReviewHost from "../components/Review/ReviewHost.vue";
+import ListingCard from "../components/ListingCard.vue"
+
 export default {
   name: "AllComponents",
   components: {
@@ -22,6 +25,7 @@ export default {
     ReviewForm,
     ReviewRoom,
     ReviewHost,
+    ListingCard
   },
 };
 </script>
