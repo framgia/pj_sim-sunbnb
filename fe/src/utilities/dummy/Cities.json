@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Cebu City",
+    "image": "https://tinyurl.com/2a2nn9ur",
+    "link": "https://en.wikipedia.org/wiki/Cebu_City"
+  },
+  {
+    "id": 2,
+    "name": "Tacloban City",
+    "image": "https://tinyurl.com/3rrbwwad",
+    "link": "https://en.wikipedia.org/wiki/Tacloban"
+  },
+  {
+    "id": 3,
+    "name": "Santa Fe",
+    "image": "https://tinyurl.com/44wbkwaa",
+    "link": "https://en.wikipedia.org/wiki/Santa_Fe,_Leyte"
+  },
+  {
+    "id": 4,
+    "name": "Baguio",
+    "image": "https://tinyurl.com/3t8abbwy",
+    "link": "https://en.wikipedia.org/wiki/Baguio"
+  },
+  {
+    "id": 5,
+    "name": "Talisay",
+    "image": "https://tinyurl.com/mpzx54w8",
+    "link": "https://en.wikipedia.org/wiki/Talisay,_Cebu"
+  },
+  {
+    "id": 5,
+    "name": "Iloilo",
+    "image": "https://tinyurl.com/3rbbxjfj",
+    "link": "https://en.wikipedia.org/wiki/Iloilo_City"
+  }
+]

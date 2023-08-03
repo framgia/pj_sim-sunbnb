@@ -1,7 +1,9 @@
 <template>
   <v-app-bar app>
-    <div class="title">SunBnB</div>
-    <input placeholder="Anywhere" class="search-bar" />
+    <div class="title"><a href="/">SunBnB</a></div>
+    <form @submit.prevent="search">
+      <input placeholder="Anywhere" class="search-bar" v-model="searchInput" />
+    </form>
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
@@ -21,6 +23,19 @@ export default {
   components: {
     NavbarProfile,
   },
+  data() {
+    return {
+      searchInput: "",
+    };
+  },
+  methods: {
+    search() {
+      const searchQuery = this.searchInput.trim();
+      if (searchQuery) {
+        this.$router.push({ path: "/search", query: { q: searchQuery } });
+      }
+    },
+  },
 };
 </script>
 
@@ -33,6 +48,11 @@ export default {
   font-size: 35px !important;
   color: red;
   cursor: pointer;
+}
+
+.title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .search-bar {
