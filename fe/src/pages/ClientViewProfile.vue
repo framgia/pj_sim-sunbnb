@@ -1,12 +1,12 @@
 <template>
-    <v-container class="mt-16">
+    <v-container>
         <v-row>
             <v-col cols="3">
                 <v-card elevation="2" width="240" height=310>
                     <v-img cover height="240" :src="client.image"></v-img>
                     <v-card-item>
-                        <v-card-subtitle>{{ client.name }}</v-card-subtitle>
-                        <v-card-subtitle>{{ client.phoneNumber }}</v-card-subtitle>
+                        <v-card-text class="name-text">{{ client.name }}</v-card-text>
+                        <v-card-text class="number-text">{{ client.phoneNumber }}</v-card-text>
                     </v-card-item>
                 </v-card>
             </v-col>
@@ -19,8 +19,10 @@
                 <br>
 
                 <div>
-                    <h2>Listings</h2>
-                    <!-- Review Components here -->
+                    <h2>Reviews Made</h2>
+                    <!-- Review Component here -->
+                    <!--In this case we use dummy data for the review component -->  
+                    <reviews/>
                 </div>
             </v-col>
         </v-row>
@@ -30,6 +32,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import user from "../utilities/dummy/User.json"
+import reviews from "../components/Review/ReviewRoom.vue"
 
 const client = ref({});
 
@@ -39,8 +42,28 @@ onMounted(() => {
 });
 
 //To do
-//Retrieve all the reviews made by the user then show it using the review components
+//Retrieve all the reviews made by the user then show it using the review component
 
 
 </script>
+
+<style scoped>
+
+    .name-text {
+        font-size: 1.4em;
+        padding: 0;
+        font-weight: 550;
+
+    }
+
+    .number-text {
+        font-size: 1.1em;
+        padding: 0;
+        font-weight: normal;
+        color: gray;
+    }
+
+    
+</style>
+
   
