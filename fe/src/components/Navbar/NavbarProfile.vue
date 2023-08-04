@@ -29,11 +29,7 @@ export default {
   data() {
     return {
       menuOpen: false,
-      items: [
-        { title: "View Profile" },
-        { title: "Edit Profile" },
-        { title: "My Reservations" },
-      ],
+      items: [{ title: "View Profile" }, { title: "Edit Profile" }, { title: "My Reservations" }],
     };
   },
   methods: {
@@ -53,13 +49,13 @@ export default {
       }
     },
     viewProfile() {
-      // Implement action to view profile
+      // TODO: Implement action to view profile
     },
     editProfile() {
-      // Implement action to edit profile
+      this.$router.push("/EditProfile");
     },
     myReservations() {
-      // Implement action for "My Reservations"
+      // TODO: Implement action for "My Reservations"
     },
   },
 };
