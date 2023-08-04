@@ -9,7 +9,7 @@ const routes = [
     path: "/",
     component: AllComponents,
   },
-  {
+ {
     path: "/registration",
     component: Registration,
   },
@@ -17,7 +17,6 @@ const routes = [
     path: "/login",
     component: Login,
   },
-
   // Add more routes as needed
 ];
 
