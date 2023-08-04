@@ -17,10 +17,6 @@ const routes = [
     path: "/login",
     component: Login,
   },
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   // Add more routes as needed
 ];
 
