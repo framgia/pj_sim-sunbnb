@@ -55,8 +55,6 @@ export default {
     viewProfile() {
       // Implement action to view profile
       this.$router.push('/ClientViewProfile')
-
-
     },
     editProfile() {
       // Implement action to edit profile

@@ -23,8 +23,7 @@ const routes = [
     path: "/clientViewProfile",
     component: ClientViewProfile,
   }
-
-
+  
   // Add more routes as needed
 ];
 
