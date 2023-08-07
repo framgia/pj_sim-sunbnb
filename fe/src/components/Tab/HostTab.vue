@@ -1,23 +1,29 @@
 <template>
-  <v-app class="pl-10">
+  <v-app>
     <v-navigation-drawer permanent>
       <v-list dense>
         <v-list-item-group>
-
           <!--Listings-->
-          <v-list-item @click.capture="handleClick(0)" :class="{ 'option-active': activeIndex === 0 }">
+          <v-list-item
+            href="#listings"
+            @click="changeActive(true)"
+            :class="{ 'option-active': isActive }"
+          >
             <v-list-item-content>
               <v-list-item-title><b>Your Listings</b></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
           <!--Reservations-->
-          <v-list-item @click.capture="handleClick(1)" :class="{ 'option-active': activeIndex === 1 }">
+          <v-list-item
+            href="#reservations"
+            @click="changeActive(false)"
+            :class="{ 'option-active': !isActive }"
+          >
             <v-list-item-content>
               <v-list-item-title><b>Your Reservations</b></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -25,21 +31,17 @@
 </template>
 
 <script setup>
-  import {ref } from 'vue';
-  const activeIndex = ref(null);
+let isActive = true;
 
-  const handleClick = (index) => {
-    if (activeIndex.value !== index) {
-      activeIndex.value = index;
-    }
-  }
+function changeActive(isListing) {
+  isActive = isListing;
+}
 </script>
 
 <style scoped>
-  .option-active {
-    background-color: red !important;
-    border-radius: 5px;
-    color: white;
-  }
-
+.option-active {
+  background-color: #ff1f1f !important;
+  border-radius: 5px;
+  color: white;
+}
 </style>

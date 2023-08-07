@@ -4,7 +4,7 @@
       <div class="profile-btn-wrapper">
         <v-btn v-bind="props" class="profile-btn">
           <v-avatar>
-            <img src="./img-placeholder.png" alt="img" class="profile-photo" />
+            <img :src="host.image" alt="img" class="profile-photo" />
           </v-avatar>
           John Doe
         </v-btn>
@@ -25,10 +25,12 @@
 </template>
 
 <script>
+import user from "../../utilities/dummy/User.json";
 export default {
   data() {
     return {
       menuOpen: false,
+      host: user,
       items: [{ title: "View Profile" }, { title: "Edit Profile" }, { title: "My Reservations" }],
     };
   },
@@ -49,7 +51,7 @@ export default {
       }
     },
     viewProfile() {
-      // TODO: Implement action to view profile
+      this.$router.push("/host/profile");
     },
     editProfile() {
       this.$router.push("/EditProfile");
