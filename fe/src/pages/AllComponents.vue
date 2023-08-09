@@ -36,6 +36,8 @@ export default {
     ListingTab,
   },
 };
+
 </script>
 
 <style></style>
+
