@@ -1,88 +1,87 @@
 <template>
-    <div class="form-container">     
-        <form @submit.prevent="submit" class="form-content">
-            <h1>Sign Up!</h1>
-            <v-text-field
-                v-model="firstName.value.value"
-                :counter="20"
-                
-                :error-messages="firstName.errorMessage.value"
-                label="First Name"
-            ></v-text-field>
+  <v-container>   
+      <form @submit.prevent="submit">
+        <h1>Sign Up!</h1>
+        <v-text-field
+            v-model="firstName.value.value"
+            :counter="20"
+            
+            :error-messages="firstName.errorMessage.value"
+            label="First Name"
+        ></v-text-field>
 
-            <v-text-field
-                v-model="lastName.value.value"
-                :counter="20"
-                :error-messages="lastName.errorMessage.value"
-                label="Last Name"
-            ></v-text-field>
-        
-            <v-text-field
-              v-model="phone.value.value"
-              :type="number"
-              :counter="11"
-              :error-messages="phone.errorMessage.value"
-              label="Phone Number"
-            ></v-text-field>
-        
-            <v-text-field
-                v-model="email.value.value"
-                :error-messages="email.errorMessage.value"
-                label="E-mail"
-            ></v-text-field>
-
-            <v-text-field
-                v-model="username.value.value"
-                :counter="20"
-                :error-messages="username.errorMessage.value"
-                label="Username"
-            ></v-text-field>
-
-            <v-text-field
-              v-model="password.value.value"
-              :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
-              :type="show1 ? 'text' : 'password'"
-              :error-messages="password.errorMessage.value"
-              name="input-10-1"
-              label="Password"
-              @click:append="show1 = !show1"
-            ></v-text-field>
-
-            <v-file-input
-              v-model="profileImg.value.value"
-              accept="image/png, image/jpeg, image/bmp"
-              prepend-icon="mdi-camera"
-              label="Profile Picture"
-            ></v-file-input>
-
-
-            <v-file-input
-                v-if="showHostInput"
-                label="DTI Documents"
-                variant="filled"
-                v-model="dtiImg.value.value"
-            ></v-file-input>
-
-
-            <v-radio-group v-model="userType" inline label="User Type:" @change="handleUserType">
-                <v-radio label="Client" value="client"></v-radio>
-                <v-radio label="Host" value="host"></v-radio>
-            </v-radio-group>
-           
-            <v-btn
-                class="me-4"
-                type="submit"
-            >
-                submit
-            </v-btn>
-        
-            <v-btn @click="handleReset">
-                clear
-            </v-btn>
-        </form>
-    </div>
+        <v-text-field
+            v-model="lastName.value.value"
+            :counter="20"
+            :error-messages="lastName.errorMessage.value"
+            label="Last Name"
+        ></v-text-field>
     
-  </template>
+        <v-text-field
+          v-model="phone.value.value"
+          :type="number"
+          :counter="11"
+          :error-messages="phone.errorMessage.value"
+          label="Phone Number"
+        ></v-text-field>
+    
+        <v-text-field
+            v-model="email.value.value"
+            :error-messages="email.errorMessage.value"
+            label="E-mail"
+        ></v-text-field>
+
+        <v-text-field
+            v-model="username.value.value"
+            :counter="20"
+            :error-messages="username.errorMessage.value"
+            label="Username"
+        ></v-text-field>
+
+        <v-text-field
+          v-model="password.value.value"
+          :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+          :type="show1 ? 'text' : 'password'"
+          :error-messages="password.errorMessage.value"
+          name="input-10-1"
+          label="Password"
+          @click:append="show1 = !show1"
+        ></v-text-field>
+
+        <v-file-input
+          v-model="profileImg.value.value"
+          accept="image/png, image/jpeg, image/bmp"
+          prepend-icon="mdi-camera"
+          label="Profile Picture"
+        ></v-file-input>
+
+
+        <v-file-input
+            v-if="showHostInput"
+            label="DTI Documents"
+            variant="filled"
+            v-model="dtiImg.value.value"
+        ></v-file-input>
+
+
+        <v-radio-group v-model="userType" inline label="User Type:" @change="handleUserType">
+            <v-radio label="Client" value="client"></v-radio>
+            <v-radio label="Host" value="host"></v-radio>
+        </v-radio-group>
+        
+        <v-btn
+            class="me-4"
+            type="submit"
+        >
+            submit
+        </v-btn>
+    
+        <v-btn @click="handleReset">
+            clear
+        </v-btn>
+      </form>
+  </v-container>   
+</template>
   <script setup>
     import { useField, useForm } from 'vee-validate'
     import { ref } from 'vue'
@@ -164,13 +163,13 @@
 
 <style scope>
     .form-container {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
     .form-content {
-        max-width: 400px;
+        max-width: 1000px;
         width: 100%;
     }
 </style>
