@@ -8,6 +8,7 @@ import Home from "../pages/HomeView.vue";
 import HostViewProfile from "../pages/HostViewProfile.vue";
 import ClientViewProfile from "../pages/ClientViewProfile.vue";
 import Search from "../pages/SearchView.vue";
+import RoomPage from "../pages/RoomPage.vue"
 
 const routes = [
   {
@@ -46,7 +47,10 @@ const routes = [
     path: "/search",
     component: Search,
   },
-
+  {
+    path: "/room",
+    component: RoomPage,
+  },
   // Add more routes as needed
 ];
 
