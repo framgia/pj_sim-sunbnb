@@ -54,7 +54,7 @@ export default {
       this.$router.push("/host/profile");
     },
     editProfile() {
-      this.$router.push("/EditProfile");
+      this.$router.push("/edit-profile");
     },
     myReservations() {
       // TODO: Implement action for "My Reservations"
