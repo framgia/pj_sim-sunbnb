@@ -57,7 +57,7 @@ export default {
       this.$router.push("/edit-profile");
     },
     myReservations() {
-      // TODO: Implement action for "My Reservations"
+      window.location.href = "/res-client"
     },
   },
 };

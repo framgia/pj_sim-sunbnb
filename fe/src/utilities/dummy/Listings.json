@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Rosvenil Hotel", "address": "302 P. Burgos Street, Tacloban City", "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268983936.jpg?k=3b7f615eb2b3fa45bff46a85531489fe801b01e1d5d0f73d1e2a480ee7a8f064&o=&hp=1"},                
+    {"id": 2, "name": "Sampaguita Suites", "address": "Plaza Garcia, Magallanes Street, Cebu City", "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/71/9d/0a/hotel-lobby-and-reception.jpg?w=600&h=-1&s=1"},                
+    {"id": 3, "name": "Tacloban Plaza Hotel", "address": "Justice Romualdez Street, Tacloban City", "img": "https://pix10.agoda.net/hotelImages/117/1178929/1178929_16031511530040764796.jpg?ca=6&ce=1&s=414x232"},                
+    {"id": 4, "name": "Crown Regency Hotel & Towers", "address": "Tower 1, Fuente Towers, Osmeña Boulevard, Cebu City", "img": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/52/15/521521_v6.jpeg"}                
+]

@@ -9,6 +9,8 @@ import HostViewProfile from "../pages/HostViewProfile.vue";
 import ClientViewProfile from "../pages/ClientViewProfile.vue";
 import Search from "../pages/SearchView.vue";
 import RoomPage from "../pages/RoomPage.vue"
+import ListAndResHost from '../pages/ListAndResHostView.vue';
+import ResClient from '../pages/ResClientView.vue';
 
 const routes = [
   {
@@ -50,6 +52,14 @@ const routes = [
   {
     path: "/room",
     component: RoomPage,
+  },
+  {
+    path: "/list-res-host",
+    component: ListAndResHost,
+  },
+  {
+    path: "/res-client",
+    component: ResClient,
   },
   // Add more routes as needed
 ];

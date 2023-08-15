@@ -5,9 +5,8 @@
         <v-list-item-group>
           <!--Listings-->
           <v-list-item
-            href="#listings"
-            @click="changeActive(true)"
-            :class="{ 'option-active': isActive }"
+            @click.capture="handleClick('list')" 
+            :class="{ 'option-active': activeIndex === 'list' }"
           >
             <v-list-item-content>
               <v-list-item-title><b>Your Listings</b></v-list-item-title>
@@ -16,9 +15,8 @@
 
           <!--Reservations-->
           <v-list-item
-            href="#reservations"
-            @click="changeActive(false)"
-            :class="{ 'option-active': !isActive }"
+            @click.capture="handleClick('reservation')" 
+            :class="{ 'option-active': activeIndex === 'reservation' }"
           >
             <v-list-item-content>
               <v-list-item-title><b>Your Reservations</b></v-list-item-title>
@@ -31,11 +29,15 @@
 </template>
 
 <script setup>
-let isActive = true;
+  import {ref} from 'vue'
 
-function changeActive(isListing) {
-  isActive = isListing;
-}
+  const activeIndex = ref('');
+
+  const handleClick = (index) => {
+      if (activeIndex.value !== index) {
+        activeIndex.value = index;
+      }
+    }
 </script>
 
 <style scoped>
