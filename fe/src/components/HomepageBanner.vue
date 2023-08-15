@@ -1,31 +1,46 @@
 <template>
-  <v-app>
+  <div>
     <div>
-      <div class="home-desc">
+      <div class="banner-desc">
         <span class="sunbnb">SunBnB</span> Book unique homes <br />and experience a city like a
         local.
       </div>
-      <div class="home-wrapper">
+      <div class="banner-wrapper">
         <div class="input-wrapper">
           <v-text-field
+            v-model="location"
             dense
             class="text-field"
             label="Where are you going?"
             variant="outlined"
           ></v-text-field>
-          <DatePicker class="date" />
+          <DatePicker v-model="selectedDate" class="date" />
         </div>
-        <v-btn class="home-search">Search</v-btn>
+        <v-btn class="input-search" @click="search">Search</v-btn>
       </div>
     </div>
-    <div class="divider"></div>
-  </v-app>
+  </div>
 </template>
 
 <script>
 import DatePicker from "../components/DatePicker.vue";
 export default {
   components: { DatePicker },
+  data() {
+    return {
+      location: "",
+      selectedDate: null,
+    };
+  },
+  methods: {
+    search() {
+      const searchQuery = {
+        location: this.location,
+        date: this.selectedDate,
+      };
+      this.$router.push({ path: "/search", query: searchQuery });
+    },
+  },
 };
 </script>
 
@@ -34,7 +49,7 @@ export default {
   color: black;
 }
 
-.home-desc {
+.banner-desc {
   font-size: 50px;
   color: #707070;
 }
@@ -46,7 +61,7 @@ export default {
   width: 100%;
 }
 
-.home-wrapper {
+.banner-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +74,7 @@ export default {
   margin-right: 15px;
 }
 
-.home-search {
+.input-search {
   background-color: red !important;
   color: white !important;
   width: 20%;
@@ -67,7 +82,7 @@ export default {
   margin: 10px;
 }
 
-.home-search:hover {
+.input-search:hover {
   background-color: #d40000 !important ;
 }
 </style>

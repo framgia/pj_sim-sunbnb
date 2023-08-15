@@ -1,14 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AllComponents from "../pages/AllComponents.vue";
-import Registration from "../pages/RegistrationView.vue"
-import Login from "../pages/LogIn.vue";
+import Registration from "../pages/RegistrationView.vue";
 import EditProfile from "../pages/EditProfile.vue";
-import AddNewListing from "../pages/AddNewListingView.vue"
-
+import AddNewListing from "../pages/AddNewListingView.vue";
+import Login from "../pages/LogIn.vue";
+import Home from "../pages/HomeView.vue";
 
 const routes = [
   {
     path: "/",
+    component: Home,
+  },
+  {
+    path: "/allcomponents",
     component: AllComponents,
   },
   {
@@ -20,7 +24,7 @@ const routes = [
     component: Login,
   },
   {
-    path: "/EditProfile",
+    path: "/editprofile",
     component: EditProfile,
   },
   {
