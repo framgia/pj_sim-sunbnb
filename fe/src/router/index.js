@@ -15,7 +15,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/allcomponents",
+    path: "/all-components",
     component: AllComponents,
   },
   {
@@ -27,11 +27,11 @@ const routes = [
     component: Login,
   },
   {
-    path: "/editprofile",
+    path: "/edit-profile",
     component: EditProfile,
   },
   {
-    path: "/AddListing",
+    path: "/add-listing",
     component: AddNewListing,
   },
   {
