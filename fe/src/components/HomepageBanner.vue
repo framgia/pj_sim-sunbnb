@@ -9,7 +9,7 @@
         <div class="input-wrapper">
           <v-text-field
             v-model="location"
-            dense
+            density="compact"
             class="text-field"
             label="Where are you going?"
             variant="outlined"
@@ -69,7 +69,7 @@ export default {
 }
 
 .text-field {
-  height: 60px !important;
+  height: 45px !important;
   max-width: 50% !important;
   margin-right: 15px;
 }
@@ -84,5 +84,10 @@ export default {
 
 .input-search:hover {
   background-color: #d40000 !important ;
+}
+
+.v-text-field.v-input--density-compact {
+  --v-input-control-height: 7px;
+  --v-input-padding-top: 2px;
 }
 </style>
