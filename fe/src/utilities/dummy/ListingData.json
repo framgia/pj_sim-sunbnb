@@ -1,63 +1,62 @@
 [
-    {
-        "name": "A Modern Chalet",
-        "image": "https://tinyurl.ph/Pvshr",
-        "price": "₱ 9857",
-        "type": "Home",
-        "capacity": "15 guests",
-        "rating": 4,
-        "reviewtotal": "20 reviews",
-        "link": "#"
-    }, 
-    {
-        "name": "Crown Regency Condo",
-        "image": "https://c1.vgtstatic.com/thumb/2/0/206471-v1-xl/crown-regency-hotel-and-towers.jpg",
-        "price": "₱ 5000",
-        "type": "Condo",
-        "capacity": "3 guests",
-        "rating": 4,
-        "reviewtotal": "21 reviews",
-        "link": "#"
-    },
-    {
-        "name": "Bai Hotel",
-        "image": "https://sugbo.ph/wp-content/uploads/2019/06/baihotelcebu-1024x840.jpg",
-        "price": "₱ 4000",
-        "type": "Hotel",
-        "capacity": "2 guests",
-        "rating": 3,
-        "reviewtotal": "22 reviews",
-        "link": "#"
-    },
-    {
-        "name": "Avalon",
-        "image": "https://cebupremierrealestate.com/wp-content/uploads/2022/02/banner.jpg",
-        "price": "₱ 10,000",
-        "type": "Condo",
-        "capacity": "6 guests",
-        "rating": 5,
-        "reviewtotal": "30 reviews",
-        "link": "https://tinyurl.ph/tkBuT"
-    },
-    {
-        "name": "Not A Monster House",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHNtrG750ZsLvb-JU7SFm1pJE9TzKBnem9g&usqp=CAU",
-        "price": "₱ 0",
-        "type": "Home",
-        "capacity": "2 guests",
-        "rating": 5,
-        "reviewtotal": "99 reviews",
-        "link": "https://tinyurl.ph/tkBuT"
-    },
-    {
-        "name": "Not The House Of Pennywise",
-        "image": "https://w0.peakpx.com/wallpaper/441/529/HD-wallpaper-it-house-clown-house-movie-killer-pennywise-horror-it-kids.jpg",
-        "price": "₱ 1",
-        "type": "Home",
-        "capacity": "100 guests",
-        "rating": 5,
-        "reviewtotal": "200 reviews",
-        "link": "https://tinyurl.ph/tkBuT"
-    }
+  {
+    "name": "A Modern Chalet",
+    "image": "https://th.bing.com/th/id/OIP.IUv9-7RpKERq4f-lkqcNrgHaEH?pid=ImgDet&rs=1",
+    "price": "₱ 9857",
+    "type": "Home",
+    "capacity": "15 guests",
+    "rating": 4,
+    "reviewtotal": "20 reviews",
+    "link": "https://tinyurl.ph/tkBuT"
+  },
+  {
+    "name": "Crown Regency Condo",
+    "image": "https://c1.vgtstatic.com/thumb/2/0/206471-v1-xl/crown-regency-hotel-and-towers.jpg",
+    "price": "₱ 5000",
+    "type": "Condo",
+    "capacity": "3 guests",
+    "rating": 4,
+    "reviewtotal": "21 reviews",
+    "link": "#"
+  },
+  {
+    "name": "Bai Hotel",
+    "image": "https://sugbo.ph/wp-content/uploads/2019/06/baihotelcebu-1024x840.jpg",
+    "price": "₱ 4000",
+    "type": "Hotel",
+    "capacity": "2 guests",
+    "rating": 3,
+    "reviewtotal": "22 reviews",
+    "link": "#"
+  },
+  {
+    "name": "Avalon",
+    "image": "https://cebupremierrealestate.com/wp-content/uploads/2022/02/banner.jpg",
+    "price": "₱ 10,000",
+    "type": "Condo",
+    "capacity": "6 guests",
+    "rating": 5,
+    "reviewtotal": "30 reviews",
+    "link": "https://tinyurl.ph/tkBuT"
+  },
+  {
+    "name": "Not A Monster House",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHNtrG750ZsLvb-JU7SFm1pJE9TzKBnem9g&usqp=CAU",
+    "price": "₱ 0",
+    "type": "Home",
+    "capacity": "2 guests",
+    "rating": 5,
+    "reviewtotal": "99 reviews",
+    "link": "https://tinyurl.ph/tkBuT"
+  },
+  {
+    "name": "Not The House Of Pennywise",
+    "image": "https://w0.peakpx.com/wallpaper/441/529/HD-wallpaper-it-house-clown-house-movie-killer-pennywise-horror-it-kids.jpg",
+    "price": "₱ 1",
+    "type": "Home",
+    "capacity": "100 guests",
+    "rating": 5,
+    "reviewtotal": "200 reviews",
+    "link": "https://tinyurl.ph/tkBuT"
+  }
 ]
-

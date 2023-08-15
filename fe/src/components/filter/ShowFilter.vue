@@ -1,11 +1,11 @@
 <template>
   <div class="filter-container">
     Price Range:
-    <PriceSlider class="slider" />
+    <PriceSlider />
     <div class="divider" />
     Dates:
-    <!-- // TODO: Will be use in the future for date input -->
-    <Divider />
+    <DatePicker class="datepicker" />
+    <div class="divider" />
     Room Type:
     <RoomCheckbox class="checkbox" />
     <div class="divider" />
@@ -16,6 +16,7 @@
 
 <script>
 import PriceSlider from "./PriceSlider.vue";
+import DatePicker from "../../components/DatePicker.vue";
 import RoomCheckbox from "./RoomCheckbox.vue";
 import AmenitiesCheckbox from "./AmenitiesCheckbox.vue";
 export default {
@@ -23,17 +24,16 @@ export default {
     PriceSlider,
     RoomCheckbox,
     AmenitiesCheckbox,
+    DatePicker,
   },
 };
 </script>
 
 <style>
-.filter-container {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
-}
 .checkbox {
   display: flex;
+}
+.datepicker {
+  margin: 10px;
 }
 </style>
